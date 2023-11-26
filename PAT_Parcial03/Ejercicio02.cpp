@@ -11,6 +11,7 @@ vector<string>* Ejercicio02::findRepeatedDnaSequences(Node<char>* head)
     string sequence;
     Node<char>* current = head;
 
+
     for (int i = 0; i < 10 && current != nullptr; ++i) {
         sequence.push_back(current->value);
         current = current->next;
@@ -22,9 +23,7 @@ vector<string>* Ejercicio02::findRepeatedDnaSequences(Node<char>* head)
 
     ++map[sequence];
 
-
     while (current != nullptr) {
-
         sequence.erase(sequence.begin());
 
         sequence.push_back(current->value);

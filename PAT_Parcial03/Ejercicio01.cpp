@@ -5,7 +5,7 @@ using namespace std;
 
 struct compare {
     bool operator()(const Node<int>* a, const Node<int>* b) {
-        return a->value > b->value;
+        return a->value < b->value;
     }
 };
 
